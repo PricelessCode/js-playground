@@ -5,7 +5,7 @@
 // Promise version
 function fetchUser() {
     return new Promise((resolve, reject) => {
-        resolve("elllie");
+        resolve("ellie");
     });
 }
 

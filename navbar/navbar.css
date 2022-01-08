@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    background: skyblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+
+/* Navbar Logos */
+.navbar__logo {
+    font-size: 24px;
+    color: black;
+}
+
+.navbar__logo i {
+    color: blue;
+}
+
+/* .navbar__logo a {
+    text-decoration: none;
+    color: black;
+} */
+
+
+/* Navbar Menus */
+
+.navbar__menu {
+    list-style: none;
+    display: flex;
+    color:white;
+}
+
+.navbar__menu li{
+    padding: 8px 12px;
+}
+
+
+/* Navbar icons */
+.navbar__icon {
+    list-style: none;
+    display: flex;
+    color: white;
+    padding: 8px 12px;
+}
