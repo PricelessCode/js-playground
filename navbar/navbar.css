@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .navbar {
@@ -13,7 +19,7 @@
 }
 
 
-/* Navbar Logos */
+/* Navbar Main Logos */
 .navbar__logo {
     font-size: 24px;
     color: black;
@@ -23,14 +29,12 @@
     color: blue;
 }
 
-/* .navbar__logo a {
-    text-decoration: none;
+.navbar__logo a {
     color: black;
-} */
+}
 
 
 /* Navbar Menus */
-
 .navbar__menu {
     list-style: none;
     display: flex;
@@ -38,14 +42,66 @@
 }
 
 .navbar__menu li{
-    padding: 8px 12px;
+    padding: 8px 24px;
+}
+
+.navbar__menu li:hover {
+    transition: 1s;
+    background-color: burlywood;
+    border-radius: 4px;
+}
+
+.navbar__menu li a:hover {
+    transition: 1s;
+    color: blue;
 }
 
 
 /* Navbar icons */
-.navbar__icon {
+.navbar__icons {
     list-style: none;
     display: flex;
     color: white;
+}
+
+.navbar__icons li {
     padding: 8px 12px;
+}
+
+/* Hamburger Menu */
+.navbar__hamburgerMenu {
+    color: white;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    display: none;
+}
+
+@media only screen and (max-width: 796px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px;
+    }
+    
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar__icons {
+        display: none;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar__hamburgerMenu {
+        display: block;
+    }
+
+    .navbar__menu.active, .navbar__icons.active {
+        display: flex;
+    }
 }

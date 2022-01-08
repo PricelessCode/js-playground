@@ -1,10 +1,8 @@
-let startTime = Date.now();
-console.log(startTime);
+const hamburgerBtn = document.querySelector('.navbar__hamburgerMenu');
+const navMenu = document.querySelector('.navbar__menu');
+const socialIcons = document.querySelector('.navbar__icons');
 
-let timer = setInterval(() => {
-    console.log("Hello there!");
-}, 1000);
-
-setTimeout(() => {
-    clearInterval(timer);
-}, 10000);
+hamburgerBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    socialIcons.classList.toggle('active');
+});
